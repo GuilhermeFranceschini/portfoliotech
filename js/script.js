@@ -188,19 +188,11 @@ animate();
 // TERMINAL
 // ========================================
 
-    const terminal = document.querySelector("#home > div:last-child");
-
-    const terminalLines = terminal.querySelectorAll("p");
-
-    console.log("Linhas do terminal:", terminalLines);
-    terminalLines.forEach(line => {
-    line.style.visibility = "hidden";
-});
-function startTerminal() {
-
-    // ========================================
+  // ========================================
 // TERMINAL - TYPING EFFECT
 // ========================================
+
+const terminal = document.querySelector("#home > div:last-child");
 
 const terminalLines = terminal.querySelectorAll("p");
 
@@ -213,6 +205,11 @@ terminalLines.forEach(line => {
     line.textContent = "";
 
 });
+
+
+// ========================================
+// TYPE LINE
+// ========================================
 
 async function typeLine(line, text) {
 
@@ -227,6 +224,11 @@ async function typeLine(line, text) {
     }
 
 }
+
+
+// ========================================
+// START TERMINAL
+// ========================================
 
 async function startTerminal() {
 
@@ -245,4 +247,4 @@ async function startTerminal() {
 
 }
 
-startTerminal();}
+startTerminal();
