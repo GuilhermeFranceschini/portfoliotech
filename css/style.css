@@ -15,7 +15,7 @@ html {
 body {
     background: #08090D;
     color: #E6E6E6;
-    font-family: Arial, sans-serif;
+    font-family: "JetBrains Mono", monospace;
     line-height: 1.6;
 }
 
@@ -41,10 +41,9 @@ nav {
 }
 
 .logo {
-    font-family: monospace;
-    font-size: 20px;
-    font-weight: bold;
-    color: #00FF88;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 nav ul {
@@ -54,10 +53,8 @@ nav ul {
 }
 
 nav a {
-    color: #8B949E;
-    text-decoration: none;
-    font-family: monospace;
-    transition: 0.3s;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 500;
 }
 
 nav a:hover {
@@ -354,4 +351,12 @@ footer {
         grid-template-columns: 1fr;
     }
 
+}
+    #neural-network {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
 }
